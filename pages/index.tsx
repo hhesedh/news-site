@@ -2,7 +2,7 @@ import React from "react";
 
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Feed } from "../components/Feed/Feed";
+import { Feed } from "../components/Feed";
 
 const Front: NextPage = () => {
   return (

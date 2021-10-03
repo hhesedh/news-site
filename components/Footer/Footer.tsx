@@ -1,5 +1,5 @@
 import React from "react";
-import { Center } from "../Center/styles";
+import { Center } from "../Center";
 import { Container } from "./style";
 
 export const Footer = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Center } from "../Center/styles";
+import { Center } from "../Center";
 import { Container } from "./style";
 
 export const Header = () => {

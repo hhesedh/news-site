@@ -5,8 +5,8 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle, theme } from "../shared/theme";
 import { AppProps } from "next/dist/shared/lib/router/router";
 import { Header } from "../components/Header/Header";
-import { Center } from "../components/Center/styles";
-import { Footer } from "../components/Footer/Footer";
+import { Center } from "../components/Center";
+import { Footer } from "../components/Footer";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
