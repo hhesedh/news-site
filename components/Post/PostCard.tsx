@@ -1,14 +1,12 @@
-import Link from "next/link";
-import React from "react";
-import { Post as PostType } from "../../shared/types";
-import { Card, Figure, Lead, Title } from "./style";
+import Link from "next/link"
+import { Post as PostType } from "../../shared/types"
+import { Card, Figure, Title, Lead } from "./PostCardStyle"
 
 type PostProps = {
-  post: PostType;
-};
+  post: PostType
+}
 
-/* TODO: REMOVER FIGURA */
-export const Post = ({ post }: PostProps) => {
+export const PostCard = ({ post }: PostProps) => {
   return (
     <Link href={`/post/${post.id}`} passHref>
       <Card>
@@ -19,5 +17,5 @@ export const Post = ({ post }: PostProps) => {
         <Lead>{post.lead}</Lead>
       </Card>
     </Link>
-  );
-};
+  )
+}

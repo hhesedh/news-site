@@ -1,6 +1,7 @@
 export type UriString = string;
 export type UniqueString = string;
 export type EntityId = number | UniqueString;
+
 export type Category = "Technology" | "Science" | "Arts";
 export type DateIsoString = string;
 

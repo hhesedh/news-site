@@ -9,15 +9,14 @@ type FeedProps = {
 export const Feed = ({ posts, categories }: FeedProps) => {
   return (
     <>
-      {categories.map((currentCategory) => {
-        const inSection = posts.filter(
-          (post) => post.category === currentCategory
-        );
+      {categories.map((category) => {
+        const inSection = posts.filter((post) => post.category === category);
         return (
           <Section
-            key={currentCategory}
-            title={currentCategory}
+            key={category}
+            title={category}
             posts={inSection}
+            isCompact
           />
         );
       })}
