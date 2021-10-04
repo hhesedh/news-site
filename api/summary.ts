@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { Post, Category } from "../shared/types";
+import { Post, Category, EntityId } from "../shared/types";
 import { config } from "./config";
 export async function fetchPosts(): Promise<Post[]> {
   const res = await fetch(`${config.baseUrl}/posts`);
