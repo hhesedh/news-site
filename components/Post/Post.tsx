@@ -1,22 +1,22 @@
 import Link from "next/link";
 import React from "react";
-import { Card, Content, Figure, Title } from "./style";
+import { Post as PostType } from "../../shared/types";
+import { Card, Figure, Lead, Title } from "./style";
+
+type PostProps = {
+  post: PostType;
+};
 
 /* TODO: REMOVER FIGURA */
-export const Post = () => {
+export const Post = ({ post }: PostProps) => {
   return (
-    <Link href="/post/example" passHref>
+    <Link href={`/post/${post.id}`} passHref>
       <Card>
         <Figure>
-          <img alt="Post photo" src="/image1.jpg" />
+          <img alt={post.title} src={post.image} />
         </Figure>
-        <Title>Post title!</Title>
-        <Content>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </Content>
+        <Title>{post.title}</Title>
+        <Lead>{post.lead}</Lead>
       </Card>
     </Link>
   );
