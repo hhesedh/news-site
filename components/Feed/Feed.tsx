@@ -1,11 +1,11 @@
-import React from "react";
-import { Category, Post } from "../../shared/types";
 import { Section } from "../Section";
+import { Post, Category } from "../../shared/types";
 
 type FeedProps = {
   posts: Post[];
   categories: Category[];
 };
+
 export const Feed = ({ posts, categories }: FeedProps) => {
   return (
     <>

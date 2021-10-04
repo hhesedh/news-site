@@ -1,10 +1,10 @@
-import Link from "next/link"
-import { Post as PostType } from "../../shared/types"
-import { Card, Figure, Title, Lead } from "./PostCardStyle"
+import Link from "next/link";
+import { Post as PostType } from "../../shared/types";
+import { Card, Figure, Title, Lead } from "./PostCardStyle";
 
 type PostProps = {
-  post: PostType
-}
+  post: PostType;
+};
 
 export const PostCard = ({ post }: PostProps) => {
   return (
@@ -17,5 +17,5 @@ export const PostCard = ({ post }: PostProps) => {
         <Lead>{post.lead}</Lead>
       </Card>
     </Link>
-  )
-}
+  );
+};

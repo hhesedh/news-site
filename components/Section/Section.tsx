@@ -1,8 +1,7 @@
-import React from "react";
 import Link from "next/link";
 import { Post as PostType } from "../../shared/types";
 import { PostCard } from "../Post";
-import { Grid, MoreLink, Title } from "./style";
+import { Grid, Title, MoreLink } from "./style";
 
 type SectionProps = {
   title: string;

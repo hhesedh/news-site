@@ -39,9 +39,7 @@ export default class MyDocument extends Document {
   render() {
     const description = "The Next generation of a news feed";
     const fontsUrl =
-      "https://fonts.googleapis.com/css2?family=Permanent+Marker&displa\
-y=swap";
-
+      "https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap";
     return (
       <Html>
         <Head>

@@ -1,8 +1,7 @@
-import React from "react";
 import Link from "next/link";
 import { Post } from "../../shared/types";
-import { Content, Meta, Figure, Title } from "./PostBodyStyle";
-import { Breadcrumbs } from "../Breadcrumbs/Breadcrumbs";
+import { Breadcrumbs } from "../../components/Breadcrumbs";
+import { Title, Figure, Content, Meta } from "./PostBodyStyle";
 
 type PostBodyProps = {
   post: Post;
