@@ -5,7 +5,7 @@ export type EntityId = number | UniqueString;
 export type Category = "Technology" | "Science" | "Arts";
 export type DateIsoString = string;
 
-export type Post {
+export type Post = {
   id: EntityId;
   date: DateIsoString;
   category: Category;
@@ -14,4 +14,4 @@ export type Post {
   content: string;
   image: UriString;
   source: UriString;
-}
+};
